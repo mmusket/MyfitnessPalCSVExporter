@@ -1,0 +1,14 @@
+{
+  "name": "My Fitness Pal Data Downloader",
+  "version": "1.1",
+  "manifest_version": 2,
+  "description": "",  
+   "content_scripts": [ {
+    "js": [ "jquery-1.8.1.js", "background.js"],
+    "matches": [ "http://www.myfitnesspal.com/reports/printable_diary/*"]
+  }],
+   "background": {
+    "scripts": ["background.js"] 	
+  },
+  "permissions": ["tabs","http://www.myfitnesspal.com/reports/printable_diary/*"]
+}
